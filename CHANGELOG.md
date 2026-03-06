@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.6.0](https://github.com/DGouron/review-flow/compare/reviewflow-v3.5.0...reviewflow-v3.6.0) (2026-03-06)
+
+
+### Added
+
+* enrich review comments with clickable file:line links ([1c0c090](https://github.com/DGouron/review-flow/commit/1c0c0902abcef0024b299f22f224b3b86c51e762))
+* enrich review comments with clickable file:line links ([604c6cc](https://github.com/DGouron/review-flow/commit/604c6cc57d1d29d6fc4f407d1225ad4d6cd3b3c9))
+
+
+### Fixed
+
+* address MR [#106](https://github.com/DGouron/review-flow/issues/106) review feedback ([cff187a](https://github.com/DGouron/review-flow/commit/cff187a13f4e433f52285fa7838e2437ceaaf595))
+* isolate review MCP config from project .mcp.json ([fdfd696](https://github.com/DGouron/review-flow/commit/fdfd69657b3ebbba76c8dd62f2b9b62051e08d2b))
+* isolate review MCP config from project .mcp.json ([1dd2531](https://github.com/DGouron/review-flow/commit/1dd25315e830a5aa291a8968e7a82b667d7fdc09))
+* remove dead ensureProjectMcpConfig and fix relative import ([29f8f63](https://github.com/DGouron/review-flow/commit/29f8f637ca27804471eb317439a19556ac580ddb))
+* resolve CI lint failure and clean up type assertion ([8c45fe6](https://github.com/DGouron/review-flow/commit/8c45fe6a3113388e3625af797fa4124ae1c2560c))
+
+
+### Changed
+
+* **gitlab-controller:** inject ReviewContextGateway via deps parameter ([619c95c](https://github.com/DGouron/review-flow/commit/619c95c28bac047ece3761a00bef8a81459ec154)), closes [#74](https://github.com/DGouron/review-flow/issues/74)
+* **gitlab-controller:** inject ThreadFetchGateway and DiffMetadataFetchGateway via deps ([04438a9](https://github.com/DGouron/review-flow/commit/04438a9c2b1e4940f24a7cce18bd824002a8d698))
+* **gitlab-controller:** inject use cases and migrate all imports to @/ alias ([bbc3598](https://github.com/DGouron/review-flow/commit/bbc3598d38119056a48c2acfd640607833362aed))
+* inject gateways and use cases in GitLab webhook controller ([#74](https://github.com/DGouron/review-flow/issues/74)) ([f6314ab](https://github.com/DGouron/review-flow/commit/f6314abfd279eccf574ee6292b00f4c0d97bf4ef))
+
 ## [3.5.0](https://github.com/DGouron/review-flow/compare/reviewflow-v3.4.0...reviewflow-v3.5.0) (2026-02-15)
 
 
